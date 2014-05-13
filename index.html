@@ -13,17 +13,31 @@
     }
     #answer {
       display: table-cell;
-      font: normal 7em Helvetica, Arial, sans-serif;
+      font-family: normal Helvetica, Arial, sans-serif;
+      font-size: 7em;
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
       text-align: center;
       text-transform: uppercase;
       vertical-align: middle;
+      transition: font 0.3s ease;
       width: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+      #answer {
+        font-size: 5em;
+      }
+    }
+    @media only screen and (max-width: 480px) {
+      #answer {
+        font-size: 3em;
+      }
     }
   </style>
 </head>
 <body>
- <div id="answer">Fucking Terrible</div>
+ <div id="answer">
+   Fucking Terrible
+ </div>
 </body>
 </html>
